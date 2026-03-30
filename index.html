@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URGENTE: Filtran el Método que Profesionales Usan para Monetizar sus Habilidades en Secreto</title>
+    <style>
+        /* CSS GENERAL */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        /* CABECERA DE LA NOTICIA */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 3px solid #b32e2e; /* Color "Noticia de Última Hora" */
+            text-align: center;
+        }
+        .header-logo {
+            font-weight: bold;
+            font-size: 28px;
+            color: #b32e2e;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+        .header-logo span {
+            color: #333;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            border-radius: 4px;
+        }
+
+        /* TÍTULO Y SUBTÍTULO */
+        h1.main-title {
+            font-family: Georgia, 'Times New Roman', Times, serif; /* Estilo periódico */
+            font-size: 38px;
+            line-height: 1.2;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        p.main-subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 25px;
+            font-weight: normal;
+        }
+
+        /* INFORMACIÓN DE LA NOTICIA (BYLINE) */
+        .meta-info {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            margin-bottom: 30px;
+            font-size: 14px;
+            color: #888;
+        }
+        .meta-info img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .meta-text span.author {
+            color: #333;
+            font-weight: bold;
+        }
+        .meta-text span.date {
+            display: block;
+        }
+
+        /* CUERPO DE LA NOTICIA */
+        article img.featured-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 25px;
+            border-radius: 2px;
+        }
+        article p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #444;
+        }
+        article p span.highlight {
+            background-color: rgba(179, 46, 46, 0.1);
+            color: #b32e2e;
+            padding: 0 5px;
+            font-weight: bold;
+        }
+        article h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 26px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        /* BLOQUE DE LLAMADO A LA ACCIÓN (CTA) */
+        .cta-block {
+            background-color: #f1f1f1;
+            border: 2px dashed #b32e2e;
+            padding: 30px;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            border-radius: 8px;
+        }
+        .cta-block h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .cta-block p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #25D366; /* Color WhatsApp */
+            color: #fff;
+            padding: 15px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+        }
+        .scarcity-text {
+            display: block;
+            font-size: 12px;
+            color: #999;
+            margin-top: 15px;
+        }
+
+        /* COMENTARIOS DE LA NOTICIA */
+        .comments-section {
+            border-top: 2px solid #eee;
+            padding-top: 30px;
+            margin-top: 50px;
+        }
+        .comments-section h4 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .comment {
+            display: flex;
+            margin-bottom: 25px;
+            align-items: flex-start;
+        }
+        .comment img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+        .comment-text {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 15px;
+            flex-grow: 1;
+        }
+        .comment-text span.author {
+            font-weight: bold;
+            color: #333;
+            margin-right: 10px;
+        }
+        .comment-text span.time {
+            color: #999;
+            font-size: 13px;
+        }
+        .comment-text p {
+            margin: 5px 0 0;
+            color: #555;
+            font-size: 15px;
+        }
+
+        /* PIE DE PÁGINA */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            font-size: 12px;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            margin-top: 50px;
+        }
+
+        /* RESPONSIVIDAD */
+        @media (max-width: 600px) {
+            h1.main-title { font-size: 28px; }
+            p.main-subtitle { font-size: 18px; }
+            article p { font-size: 16px; }
+            .cta-block { padding: 20px; }
+            .cta-button { font-size: 18px; padding: 12px 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-logo">Noticias<span>Exclusivas</span></div>
+    </header>
+
+    <div class="container">
+        <h1 class="main-title">URGENTE: Filtran el Método que Profesionales Usan para Monetizar sus Habilidades en Secreto</h1>
+        <p class="main-subtitle">Una nueva investigación revela cómo expertos están multiplicando sus ingresos sin dejar sus empleos actuales.</p>
+        
+        <div class="meta-info">
+            <img src="placeholder_author.jpg" alt="[Nombre del Autor]">
+            <div class="meta-text">
+                por <span class="author">Marcos Rivas</span>
+                <span class="date">Publicado: <span id="dynamic-date"></span> — <span id="dynamic-city"></span></span>
+            </div>
+        </div>
+
+        <article>
+            <img src="placeholder_main.jpg" alt="Un profesional monetizando su conocimiento" class="featured-image">
+
+            <p><strong>Nación</strong> — Una nueva investigación ha puesto al descubierto un método exclusivo que, hasta ahora, parecía reservado para unos pocos privilegiados. Profesionales de diversos sectores —abogados, ingenieros, carpinteros, contadores y creativos— están logrando un cambio radical en sus vidas económicas <span class="highlight">sin necesidad de abandonar sus empleos actuales o invertir capitales arriesgados.</span></p>
+            
+            <p>El "secreto", filtrado por fuentes anónimas, no tiene nada que ver con criptomonedas o trading. Se trata de un enfoque sistémico para **transformar su propia experiencia y habilidades adquiridas durante años en un producto digital monetizable.** Muchos de estos profesionales logran duplicar o triplicar sus ingresos en cuestión de meses.</p>
+
+            <h2>De la Oficina al Negocio Digital: Una Transformación Invisible</h2>
+            
+            <p>"La mayoría de la gente con una carrera o un oficio exitoso cree que su único camino es seguir cobrando por hora o por proyecto", dice Laura Jiménez, analista de mercado digital. "Lo que no ven es que su conocimiento es un activo increíblemente valioso. Al empaquetarlo en un formato digital, como un curso o mentoría, pueden venderlo a miles de personas en todo el mundo, las 24 horas del día".</p>
+            
+            <img src="placeholder_inline.jpg" alt="Infografía del proceso de monetización">
+
+            <p>El método revelado no requiere ser un experto en tecnología. La clave está en usar un ecosistema ya validado que facilita la creación, el marketing y la venta automatizada. "Es como descubrir una mina de oro en tu propio cerebro que estabas ignorando", añade Jiménez.</p>
+
+            <h2>La Revelación: Un Evento Exclusivo</h2>
+            
+            <p>Fuentes confiables han confirmado que un grupo de expertos en la materia, vinculados a la reconocida plataforma *Universidad.online*, ha decidido romper el silencio. Organizarán un evento en vivo exclusivo para un grupo selecto de interesados, donde compartirán paso a paso el método completo que están usando.</p>
+
+            <p>Este evento promete revelar exactamente cómo identificar cuál de sus habilidades es la más rentable, cómo estructurarla en un producto digital atractivo y cómo usar tráfico nativo (como el que estás leyendo ahora) para llenarlo de clientes calificados, incluso si son completos desconocidos.</p>
+
+            <div class="cta-block">
+                <h3>Última Hora: Cómo Acceder al Método Hoy</h3>
+                <p>El acceso al evento en vivo es extremadamente limitado para asegurar una atención personalizada.</p>
+                <p><strong>El primer paso obligatorio para recibir el link y los detalles es unirse al grupo exclusivo de WhatsApp.</strong></p>
+                
+                <a href="https://chat.whatsapp.com/BW1EG4sNfxzHksGDYlLhsI" class="cta-button" target="_blank">Asegurar Mi Cupo en WhatsApp</a>
+                
+                <span class="scarcity-text">Este grupo se cerrará al alcanzar los 50 miembros.</span>
+            </div>
+            
+            <p>No hay grabación disponible confirmada para este evento, por lo que la asistencia es crítica para quienes desean aprovechar esta oportunidad única de transformar su conocimiento en riqueza digital.</p>
+        </article>
+
+        <div class="comments-section">
+            <h4>Comentarios (11)</h4>
+            <div class="comment">
+                <img src="comment_user1.jpg" alt="Usuario 1">
+                <div class="comment-text">
+                    <span class="author">Roberto Gómez</span><span class="time">hace 3 horas</span>
+                    <p>Increíble. Yo soy carpintero hace 20 años y nunca pensé que mi forma de trabajar valiera algo para otros. El grupo de WhatsApp es un primer paso simple, a ver qué explican.</p>
+                </div>
+            </div>
+            <div class="comment">
+                <img src="comment_user2.jpg" alt="Usuario 2">
+                <div class="comment-text">
+                    <span class="author">Ana Martínez</span><span class="time">hace 2 horas</span>
+                    <p>Soy abogada y mi agenda está al 100%. Me interesa mucho la idea de "monetizar sin dejar mi empleo". Unirme al grupo fue rápido.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Noticias Exclusivas S.A. Todos los derechos reservados.</p>
+        <p>Este artículo es contenido patrocinado de Universidad.online</p>
+    </footer>
+
+    <script>
+        // Función para actualizar la fecha dinámicamente
+        function updateDate() {
+            const dateElement = document.getElementById('dynamic-date');
+            const now = new Date();
+            const options = { day: 'numeric', month: 'long', year: 'numeric' };
+            const formattedDate = now.toLocaleDateString('es-ES', options);
+            dateElement.textContent = formattedDate;
+        }
+
+        // Función para estimar la ciudad (Mejorable con API, pero para pre-landing básica, esto funciona)
+        function updateCity() {
+            const cityElement = document.getElementById('dynamic-city');
+            // Nota: Este JS no tiene acceso a la IP. MGID se encarga de la geolocalización.
+            // Para una pre-landing, solemos dejar "Cerca de ti" o una ciudad genérica del país objetivo.
+            // Si el país objetivo es LATAM, puedes usar una capital o "Cerca de ti".
+            cityElement.textContent = "LATAM"; // O déjalo en blanco si prefieres no adivinar.
+        }
+
+        // Llamar a las funciones al cargar
+        window.onload = function() {
+            updateDate();
+            // updateCity(); // Descomenta si usas una ciudad genérica
+        };
+    </script>
+</body>
+</html>
